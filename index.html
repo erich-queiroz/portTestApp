@@ -6,12 +6,12 @@
     <meta name="author" content="Erich Queiroz | github.com/erich-queiroz">
     <meta name="description" content="Escutador de portas de acesso remoto">
     <title>Teste de Portas</title>
-    <link rel="stylesheet" href="frontEnd/style.css">
+    <link rel="stylesheet" href="/frontEnd/style.css">
 </head>
 <body>
     <div class="container">
         <h1>Teste de Portas</h1>
-        <form id="portTestForm">
+        <form id="portTestForm" action="/backEnd/port_test.php" method="post">
             <label for="ipAddress">Endereço de IP:</label>
             <input type="text" id="ipAddress" name="ipAddress" required>
             
@@ -30,6 +30,6 @@
         Desenvolvido por Erich Queiroz. Todos os direitos reservados.
     </footer>
 
-    <script src="frontEnd/script.js"></script>
+    <script src="/frontEnd/script.js"></script>
 </body>
 </html>
