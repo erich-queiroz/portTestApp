@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Erich Queiroz | github.com/erich-queiroz">
+    <meta name="description" content="Escutador de portas de acesso remoto">
+    <title>Teste de Portas</title>
+    <link rel="stylesheet" href="frontEnd/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Teste de Portas</h1>
+        <form id="portTestForm">
+            <label for="ipAddress">Endereço de IP:</label>
+            <input type="text" id="ipAddress" name="ipAddress" required>
+            
+            <label for="ports">Portas (separadas por vírgula):</label>
+            <input type="text" id="ports" name="ports" value="80,8080,4343,443,8051,5069,5068" required>
+
+            <button type="submit">Testar Portas</button>
+        </form>
+
+        <div id="loading" class="loading" style="display: none;"></div>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <footer>
+        Desenvolvido por Erich Queiroz. Todos os direitos reservados.
+    </footer>
+
+    <script src="frontEnd/script.js"></script>
+</body>
+</html>
